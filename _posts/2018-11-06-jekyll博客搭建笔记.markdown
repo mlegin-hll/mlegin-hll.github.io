@@ -118,7 +118,9 @@ theme: minima
 plugins:
   - jekyll-feed
 ```
+# 五、绑定域名
 
+[参照](https://blog.csdn.net/u013282507/article/details/54944395)
 
 
 

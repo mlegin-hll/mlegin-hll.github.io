@@ -1,4 +1,107 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-11-06T10:27:03+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2018/11/05/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2018-11-05T21:10:08+08:00</published><updated>2018-11-05T21:10:08+08:00</updated><id>http://localhost:4000/jekyll/update/2018/11/05/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/11/05/welcome-to-jekyll.html">&lt;p&gt;三生三世You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-11-06T11:32:53+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">mlegin’s blog</title><subtitle>个人简介：兴趣使然</subtitle><entry><title type="html">2018-11-06jeklly博客搭建笔记</title><link href="http://localhost:4000/jekyll/update/2018/11/06/jekyll%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="2018-11-06jeklly博客搭建笔记" /><published>2018-11-06T11:10:08+08:00</published><updated>2018-11-06T11:10:08+08:00</updated><id>http://localhost:4000/jekyll/update/2018/11/06/jekyll%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/11/06/jekyll%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0.html">&lt;h1 id=&quot;一jekyll简介&quot;&gt;一、jekyll简介&lt;/h1&gt;
+
+&lt;p&gt;jekyll是一个简单的免费的Blog生成工具，可以看做一个将markdown文件生成静态网站的工具，并且他可以免费部署在github上，结合github Pages，我们可以在自己的github.io上看我们的markdown“静态网站”&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mlegin-hll.github.io&quot;&gt;效果&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;二安装&quot;&gt;二、安装&lt;/h1&gt;
+
+&lt;p&gt;1.首先在github账户上以&lt;strong&gt;自己的username&lt;/strong&gt;新建一个仓库&lt;/p&gt;
+
+&lt;p&gt;然后clone到本地&lt;/p&gt;
+
+&lt;p&gt;文件名：【username.github.io】&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pages.github.com/&quot;&gt;参照链接&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;2.安装启动jekyll&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem install jekyll
+
+gem install bundler     //Bundler 是管理Gem相依性的工具
+
+gem install minima      //主题
+
+jekyll -v               //查看版本
+
+jekyll new firstBlog    //新建blog
+
+cd firstBlog
+
+jekyll server           //启动本地服务，在127.0.0.1:4000中可以查看
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;相关报错记录&quot;&gt;相关报错记录&lt;/h3&gt;
+
+&lt;p&gt;运行jekyll 命令报错&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require': cannot load such file -- bundler (LoadError)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;原因未安装bundler
+解决方法：&lt;/p&gt;
+
+&lt;p&gt;命令需要sudo&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem install bundler
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;依然报错&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require': cannot load such file -- bundler (LoadError)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;解决&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem install minima
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;三部署文件到github&quot;&gt;三、部署文件到github&lt;/h1&gt;
+
+&lt;p&gt;1.拷贝文件&lt;/p&gt;
+
+&lt;p&gt;将firstBlog内所有文件拷贝到username.github.io文件夹下&lt;/p&gt;
+
+&lt;p&gt;2.提交到远端仓库&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add .
+git commit -m &quot;init jekyll&quot;
+git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;过一分钟访问http://{username}.github.io试试&lt;/p&gt;
+
+&lt;h1 id=&quot;四使用&quot;&gt;四、使用&lt;/h1&gt;
+
+&lt;p&gt;1.添加文章&lt;/p&gt;
+
+&lt;p&gt;文章都放在_posts目录下，格式需要严格按照年-月-日-文章名.markdown&lt;/p&gt;
+
+&lt;p&gt;文件开头参照默认格式&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+layout: post
+title:  &quot;Welcome to Jekyll!&quot;
+date:   2017-02-22 09:56:49 +0800
+categories: jekyll update
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;2.配置文件 _config.yml&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;title: 我的标题
+email: shiyue@hualala.com
+description: &amp;gt;- # this means to ignore newlines until &quot;baseurl:&quot;
+  个人简介：兴趣使然
+baseurl: &quot;&quot; # the subpath of your site, e.g. /blog
+url: &quot;&quot; # the base hostname &amp;amp; protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  mlegin-hll
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">一、jekyll简介</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2018/11/05/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2018-11-05T21:10:08+08:00</published><updated>2018-11-05T21:10:08+08:00</updated><id>http://localhost:4000/jekyll/update/2018/11/05/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/11/05/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
@@ -10,7 +113,7 @@
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">三生三世You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">2018-10-23笔记!</title><link href="http://localhost:4000/jekyll/update/2018/10/23/%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="2018-10-23笔记!" /><published>2018-10-23T21:10:08+08:00</published><updated>2018-10-23T21:10:08+08:00</updated><id>http://localhost:4000/jekyll/update/2018/10/23/%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/10/23/%E7%AC%94%E8%AE%B0.html">&lt;h2 id=&quot;app&quot;&gt;app&lt;/h2&gt;
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">2018-10-23笔记!</title><link href="http://localhost:4000/jekyll/update/2018/10/23/%E7%AC%94%E8%AE%B0.html" rel="alternate" type="text/html" title="2018-10-23笔记!" /><published>2018-10-23T21:10:08+08:00</published><updated>2018-10-23T21:10:08+08:00</updated><id>http://localhost:4000/jekyll/update/2018/10/23/%E7%AC%94%E8%AE%B0</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/10/23/%E7%AC%94%E8%AE%B0.html">&lt;h2 id=&quot;app&quot;&gt;app&lt;/h2&gt;
 
 &lt;h3 id=&quot;项目结构&quot;&gt;项目结构&lt;/h3&gt;
 

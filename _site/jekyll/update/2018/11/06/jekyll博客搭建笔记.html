@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>2018-11-06jeklly博客搭建笔记 | mlegin’s blog</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="2018-11-06jeklly博客搭建笔记" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="一、jekyll简介" />
+<meta property="og:description" content="一、jekyll简介" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2018/11/06/jekyll%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2018/11/06/jekyll%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0.html" />
+<meta property="og:site_name" content="mlegin’s blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-11-06T11:10:08+08:00" />
+<script type="application/ld+json">
+{"description":"一、jekyll简介","@type":"BlogPosting","url":"http://localhost:4000/jekyll/update/2018/11/06/jekyll%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0.html","headline":"2018-11-06jeklly博客搭建笔记","dateModified":"2018-11-06T11:10:08+08:00","datePublished":"2018-11-06T11:10:08+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2018/11/06/jekyll%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="mlegin's blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">mlegin&#39;s blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">2018-11-06jeklly博客搭建笔记</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2018-11-06T11:10:08+08:00" itemprop="datePublished">Nov 6, 2018
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h1 id="一jekyll简介">一、jekyll简介</h1>
+
+<p>jekyll是一个简单的免费的Blog生成工具，可以看做一个将markdown文件生成静态网站的工具，并且他可以免费部署在github上，结合github Pages，我们可以在自己的github.io上看我们的markdown“静态网站”</p>
+
+<p><a href="http://mlegin-hll.github.io">效果</a></p>
+
+<h1 id="二安装">二、安装</h1>
+
+<p>1.首先在github账户上以<strong>自己的username</strong>新建一个仓库</p>
+
+<p>然后clone到本地</p>
+
+<p>文件名：【username.github.io】</p>
+
+<p><a href="https://pages.github.com/">参照链接</a></p>
+
+<p>2.安装启动jekyll</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install jekyll
+
+gem install bundler     //Bundler 是管理Gem相依性的工具
+
+gem install minima      //主题
+
+jekyll -v               //查看版本
+
+jekyll new firstBlog    //新建blog
+
+cd firstBlog
+
+jekyll server           //启动本地服务，在127.0.0.1:4000中可以查看
+</code></pre></div></div>
+
+<h3 id="相关报错记录">相关报错记录</h3>
+
+<p>运行jekyll 命令报错</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require': cannot load such file -- bundler (LoadError)
+</code></pre></div></div>
+<p>原因未安装bundler
+解决方法：</p>
+
+<p>命令需要sudo</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install bundler
+</code></pre></div></div>
+
+<p>依然报错</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require': cannot load such file -- bundler (LoadError)
+</code></pre></div></div>
+
+<p>解决</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install minima
+</code></pre></div></div>
+
+<h1 id="三部署文件到github">三、部署文件到github</h1>
+
+<p>1.拷贝文件</p>
+
+<p>将firstBlog内所有文件拷贝到username.github.io文件夹下</p>
+
+<p>2.提交到远端仓库</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add .
+git commit -m "init jekyll"
+git push -u origin master
+</code></pre></div></div>
+
+<p>过一分钟访问http://{username}.github.io试试</p>
+
+<h1 id="四使用">四、使用</h1>
+
+<p>1.添加文章</p>
+
+<p>文章都放在_posts目录下，格式需要严格按照年-月-日-文章名.markdown</p>
+
+<p>文件开头参照默认格式</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: post
+title:  "Welcome to Jekyll!"
+date:   2017-02-22 09:56:49 +0800
+categories: jekyll update
+---
+</code></pre></div></div>
+
+<p>2.配置文件 _config.yml</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>title: 我的标题
+email: shiyue@hualala.com
+description: &gt;- # this means to ignore newlines until "baseurl:"
+  个人简介：兴趣使然
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname &amp; protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  mlegin-hll
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+</code></pre></div></div>
+
+
+  </div><a class="u-url" href="/jekyll/update/2018/11/06/jekyll%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">mlegin&#39;s blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">mlegin&#39;s blog</li><li><a class="u-email" href="mailto:shiyue@hualala.com">shiyue@hualala.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/mlegin-hll"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">mlegin-hll</span></a></li><li><a href="https://www.twitter.com/jekyllrb"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jekyllrb</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>个人简介：兴趣使然</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

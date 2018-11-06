@@ -1,0 +1,127 @@
+---
+layout: post
+title:  "2018-11-06jeklly博客搭建笔记"
+date:   2018-11-06 11:10:08 +0800
+categories: jekyll update
+---
+
+# 一、jekyll简介
+
+jekyll是一个简单的免费的Blog生成工具，可以看做一个将markdown文件生成静态网站的工具，并且他可以免费部署在github上，结合github Pages，我们可以在自己的github.io上看我们的markdown“静态网站”
+
+[效果](http://mlegin-hll.github.io)
+
+
+# 二、安装
+
+1.首先在github账户上以**自己的username**新建一个仓库
+
+然后clone到本地
+
+文件名：【username.github.io】
+
+[参照链接](https://pages.github.com/)
+
+2.安装启动jekyll
+```
+gem install jekyll
+
+gem install bundler     //Bundler 是管理Gem相依性的工具
+
+gem install minima      //主题
+
+jekyll -v               //查看版本
+
+jekyll new firstBlog    //新建blog
+
+cd firstBlog
+
+jekyll server           //启动本地服务，在127.0.0.1:4000中可以查看
+```
+
+### 相关报错记录
+
+运行jekyll 命令报错
+
+```
+/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require': cannot load such file -- bundler (LoadError)
+```
+原因未安装bundler
+解决方法：
+
+命令需要sudo
+
+```
+gem install bundler
+```
+
+依然报错
+
+```
+/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require': cannot load such file -- bundler (LoadError)
+```
+
+解决
+
+```
+gem install minima
+```
+
+# 三、部署文件到github
+
+1.拷贝文件
+
+将firstBlog内所有文件拷贝到username.github.io文件夹下
+
+2.提交到远端仓库
+
+```
+git add .
+git commit -m "init jekyll"
+git push -u origin master
+```
+
+过一分钟访问http://{username}.github.io试试
+
+# 四、使用
+
+1.添加文章
+
+文章都放在_posts目录下，格式需要严格按照年-月-日-文章名.markdown
+
+文件开头参照默认格式
+
+```
+---
+layout: post
+title:  "Welcome to Jekyll!"
+date:   2017-02-22 09:56:49 +0800
+categories: jekyll update
+---
+```
+
+2.配置文件 _config.yml
+
+```
+title: 我的标题
+email: shiyue@hualala.com
+description: >- # this means to ignore newlines until "baseurl:"
+  个人简介：兴趣使然
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  mlegin-hll
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+```
+
+
+
+
+
+
+

@@ -24,7 +24,7 @@ jekyll是一个简单的免费的Blog生成工具，可以看做一个将markdow
 
 2.安装启动jekyll
 ```
-gem install jekyll
+gem install jekyll      //没有gem请自行google配置ruby环境
 
 gem install bundler     //Bundler 是管理Gem相依性的工具
 

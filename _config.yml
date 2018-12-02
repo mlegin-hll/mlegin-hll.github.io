@@ -28,6 +28,19 @@ theme: minima
 plugins:
   - jekyll-feed
 
+#comments: true
+
+comments:
+  gitalk: true
+  gitalk_clientID: 'f2f3b5bfef7d8b38ca20'
+  gitalk_Secret: 'bb0e3ba63af05f2957b4f4984afcf5416ae9deea'
+  gitalk_repo: 'mlegin-hll.github.io'
+  gitalk_owner: 'mlegin-hll'
+  gitalk_admin: 'mlegin-hll'
+  distractionFreeMode: false
+
+
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

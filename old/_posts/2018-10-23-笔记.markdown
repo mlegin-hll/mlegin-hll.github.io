@@ -1,0 +1,130 @@
+---
+layout: post
+title:  "2018-10-23笔记!"
+date:   2018-10-23 21:10:08 +0800
+categories: jekyll update
+---
+
+## app
+
+### 项目结构
+
+```
+index.ios.js        //ios入口
+index.android.js    //android入口
+android             //android native
+ios                 //ios native
+res                 //全局资源
+doc                 //文档
+js                  
+    common          //可复用组件
+    expand          //扩展
+    page            //完整页面
+    config          //配置项
+    util            //工具类
+```
+
+### 标签
+
+#### navigation
+页面跳转-传值
+
+#### navigationBar
+标题栏，状态栏
+
+#### react-navigation
+取代navigation
+StacNavigator 上
+TapNavigator 底
+DrawerNavigator 侧边划出
+
+### 了解hll_sc_app
+
+#### npm 镜像
+在文件夹下默认是
+
+```
+http://sinopia.node.hualala.com/#/
+```
+
+### git 
+
+#### 拉取远端分支到本地
+
+git checkout -b 本地分支名 origin/远程分支名
+
+### 报错
+
+```
+error react-native@0.57.3: The engine "node" is incompatible with this module. Expected version ">=8.3". Got "8.2.1"
+error Found incompatible module
+```
+
+node版本低了
+
+解决：
+
+```
+### 第一步：使用npm安装n模块
+
+* * *
+
+n模块是专门用来管理nodejs版本的
+
+sudo npm install -g n
+
+> **提示 :** 如果不使用sudo作为前缀，很可能出现权限访问异常导致安装失败
+
+### 第二步：升级nodejs
+
+* * *
+
+升级nodejs是有两种方法： 
+第一种是升级到最新版本
+
+sudo n latest
+
+第二种是升级到稳定版本
+
+sudo n stable
+
+> **提示 :** 建议是稳定版本 
+> 更多n模块管理请搜索【nodejs n模块使用说明】
+
+来源作者：Fan_Chason
+链接：https://www.jianshu.com/p/8ba8b795de10
+```
+引申
+电脑里有n管理node版本，node版本是10.12，但npm install的时候用的是8.21，所以报错，n回8.21就可以npm install了
+
+
+### 问题
+
+#### 1.CFBundleIdentifier
+```
+CFBundleIdentifier", Does Not Exist
+```
+
+原因：
+init命令默认会创建最新的版本，而目前最新的0.45版本需要下载boost库编译。此库体积庞大，在国内即便翻墙也很难下载成功，导致很多人无法正常运行iOS项目，推荐暂时使用0.44.3的版本。
+
+解决：
+
+```
+react-native init MyApp –-version 0.44.3
+```
+延伸：跑公司项目报此错误
+以为是什么设置问题，结果将升级包文件复制到node_modules里面，解决。
+
+### 2.watchman
+
+```
+node[10060] (FSEvents.framework) FSEventStreamStart: register_with_server: ERROR: f2d_register_rpc() => (null) (-22) 2018-10-23 13:19 node[10060] (FSEvents.framework) FSEventStreamStart: register_with_server: ERROR: f2d_register_rpc() => (null) (-22)
+```
+
+原因：更新了macOS 但是没用最新watchman
+
+解决：
+```
+brew install watchman
+```

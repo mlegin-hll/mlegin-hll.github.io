@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2018-11-06jeklly博客搭建笔记 - mlegin</title>
+    <meta name="author"  content="mlegin">
+    <meta name="description" content="2018-11-06jeklly博客搭建笔记">
+    <meta name="keywords"  content="">
+    <!-- Open Graph -->
+    <meta property="og:title" content="2018-11-06jeklly博客搭建笔记 - mlegin">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://localhost:4000/2018/11/06/jekyll%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0.html">
+    <meta property="og:description" content="昵称悟空，千禧一代，前端开发者/伪极客/灵魂摄影师，热爱技术&设计。很高兴能在这里与你分享我对技术和生活的思考。">
+    <meta property="og:site_name" content="mlegin">
+    <link rel="stylesheet" href="//cdn.staticfile.org/normalize/6.0.0/normalize.min.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_roc50gemkxpw4s4i.css">
+    <link rel="stylesheet" href="/assets/css/github-markdown.css">
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/share.min.css">
+    <link rel="stylesheet" href="/assets/css/app.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+	
+	<!--
+Author: Ray-Eldath
+refer to:
+ - http://docs.mathjax.org/en/latest/options/index.html
+-->
+
+	<script type="text/javascript" async src="https://cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+	
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+		jax: ["input/TeX", "output/HTML-CSS"],
+		tex2jax: {
+			inlineMath: [ ["$", "$"] ],
+			displayMath: [ ["$$", "$$"] ],
+			skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+		},
+		"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+      });
+    </script>
+
+	
+    <!--
+Author: Ray-Eldath
+-->
+<style>
+    .markdown-body .anchor{
+        float: left;
+        margin-top: -8px;
+        margin-left: -20px;
+        padding-right: 4px;
+        line-height: 1;
+        opacity: 0;
+    }
+    
+    .markdown-body .anchor .anchor-icon{
+        font-size: 15px
+    }
+</style>
+<script>
+    $(document).ready(function() {
+        let nodes = document.querySelector(".markdown-body").querySelectorAll("h1,h2,h3")
+        for(let node of nodes) {
+            var anchor = document.createElement("a")
+            var anchorIcon = document.createElement("i")
+            anchorIcon.setAttribute("class", "fa fa-anchor fa-lg anchor-icon")
+            anchorIcon.setAttribute("aria-hidden", true)
+            anchor.setAttribute("class", "anchor")
+            anchor.setAttribute("href", "#" + node.getAttribute("id"))
+            
+            anchor.onmouseover = function() {
+                this.style.opacity = "0.4"
+            }
+            
+            anchor.onmouseout = function() {
+                this.style.opacity = "0"
+            }
+            
+            anchor.appendChild(anchorIcon)
+            node.appendChild(anchor)
+        }
+    })
+</script>
+</head>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<body>
+  <!--[if lt IE 10]>
+<div class="alert-danger" role="alert">你的浏览器实在太太太旧了，放学别走，升级完浏览器再说！<a target="_blank" class="alert-link" href="http://browsehappy.com">立即升级</a></div>
+<![endif]-->
+  <input id="nm-switch" type="hidden" value="true"> <header class="g-header">
+    <div class="g-logo">
+      <a href="/"></a>
+    </div>
+    <i id="menu-toggle" class="iconfont icon-menu"></i>
+    <nav class="g-nav">
+        <ul>
+            
+            <li><a href="/">home</a></li>
+            
+            <li><a href="/tags.html">tags</a></li>
+            
+        </ul>
+    </nav>
+</header>
+
+
+  <header
+    class="g-banner post-header post-pattern-circuitBoard bgcolor-default post-no-cover"
+    data-theme="default"
+  >
+    <div class="post-wrapper">
+      <div class="post-tags">
+        
+      </div>
+      <h1>2018-11-06jeklly博客搭建笔记</h1>
+      <div class="post-meta">
+        <span class="post-meta-item"><i class="iconfont icon-author"></i>mlegin</span>
+        <time class="post-meta-item" datetime="18-11-06"><i class="iconfont icon-date"></i>06 Nov 2018</time>
+      </div>
+    </div>
+    
+  </header>
+
+  <div class="post-content visible">
+    
+
+    <article class="markdown-body">
+      <h1 id="一jekyll简介">一、jekyll简介</h1>
+
+<p>jekyll是一个简单的免费的Blog生成工具，可以看做一个将markdown文件生成静态网站的工具，并且他可以免费部署在github上，结合github Pages，我们可以在自己的github.io上看我们的markdown“静态网站”</p>
+
+<p><a href="http://mlegin-hll.github.io">效果</a></p>
+
+<h1 id="二安装">二、安装</h1>
+
+<p>1.首先在github账户上以<strong>自己的username</strong>新建一个仓库</p>
+
+<p>然后clone到本地</p>
+
+<p>文件名：【username.github.io】</p>
+
+<p><a href="https://pages.github.com/">参照链接</a></p>
+
+<p>2.安装启动jekyll</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install jekyll      //没有gem请自行google配置ruby环境
+
+gem install bundler     //Bundler 是管理Gem相依性的工具
+
+gem install minima      //主题
+
+jekyll -v               //查看版本
+
+jekyll new firstBlog    //新建blog
+
+cd firstBlog
+
+jekyll server           //启动本地服务，在127.0.0.1:4000中可以查看
+</code></pre></div></div>
+
+<h3 id="相关报错记录">相关报错记录</h3>
+
+<p>运行jekyll 命令报错</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require': cannot load such file -- bundler (LoadError)
+</code></pre></div></div>
+<p>原因未安装bundler
+解决方法：</p>
+
+<p>命令需要sudo</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install bundler
+</code></pre></div></div>
+
+<p>依然报错</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require': cannot load such file -- bundler (LoadError)
+</code></pre></div></div>
+
+<p>解决</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install minima
+</code></pre></div></div>
+
+<h1 id="三部署文件到github">三、部署文件到github</h1>
+
+<p>1.拷贝文件</p>
+
+<p>将firstBlog内所有文件拷贝到username.github.io文件夹下</p>
+
+<p>2.提交到远端仓库</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add .
+git commit -m "init jekyll"
+git push -u origin master
+</code></pre></div></div>
+
+<p>过一分钟访问http://{username}.github.io试试</p>
+
+<h1 id="四使用">四、使用</h1>
+
+<p>1.添加文章</p>
+
+<p>文章都放在_posts目录下，格式需要严格按照年-月-日-文章名.markdown</p>
+
+<p>文件开头参照默认格式</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: post
+title:  "Welcome to Jekyll!"
+date:   2017-02-22 09:56:49 +0800
+categories: jekyll update
+---
+</code></pre></div></div>
+
+<p>2.配置文件 _config.yml</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>title: 我的标题
+email: shiyue@hualala.com
+description: &gt;- # this means to ignore newlines until "baseurl:"
+  个人简介：兴趣使然
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname &amp; protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  mlegin-hll
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+</code></pre></div></div>
+<h1 id="五绑定域名">五、绑定域名</h1>
+
+<p><a href="https://blog.csdn.net/u013282507/article/details/54944395">参照</a></p>
+
+
+    </article>
+
+    
+    <div class="social-share-wrapper">
+      <div class="social-share"></div>
+    </div>
+    
+  </div>
+
+  <section class="author-detail">
+    <section class="post-footer-item author-card">
+      <div class="avatar">
+        <img src="http://localhost:4000/assets/img/profile.png" alt="">
+      </div>
+      <div class="author-name" rel="author">mlegin</div>
+      <div class="bio">
+        <p>前端开发者，热爱技术&设计，简单乐观爱创造</p>
+      </div>
+      
+      <ul class="sns-links">
+        
+        <li>
+          <a href="//weibo.com/lovecolcol" target="_blank">
+                    <i class="iconfont icon-weibo"></i>
+                </a>
+        </li>
+        
+        <li>
+          <a href="//juejin.im/user/57a6f434165abd006159b4cc" target="_blank">
+                    <i class="iconfont icon-juejin"></i>
+                </a>
+        </li>
+        
+        <li>
+          <a href="//www.instagram.com/steveliaocn" target="_blank">
+                    <i class="iconfont icon-instagram"></i>
+                </a>
+        </li>
+        
+        <li>
+          <a href="//github.com/kaeyleo" target="_blank">
+                    <i class="iconfont icon-github"></i>
+                </a>
+        </li>
+        
+      </ul>
+      
+    </section>
+    <section class="post-footer-item read-next">
+      
+
+      
+      <div class="read-next-item">
+        <a href="/2018/11/06/jekyll%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0.html" class="read-next-link"></a>
+          <section>
+            <span>2018-11-06jeklly博客搭建笔记</span>
+            <p>一、jekyll简介</p>
+          </section>
+          
+      </div>
+      
+    </section>
+    
+    <div id="gitalk_container"></div>
+  </section>
+
+  <footer class="g-footer">
+  <section>mlegin ©
+  
+  
+    2017
+    -
+  
+  2018
+  </section>
+  <section>Powered by <a href="//jekyllrb.com">Jekyll</a> | <a href="https://github.com/kaeyleo/jekyll-theme-H2O">Theme H2O</a></section>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <script src="/assets/js/social-share.min.js"></script>
+  <script>
+    socialShare('.social-share', {
+      sites: [
+        
+          'wechat'
+          ,
+          
+        
+          'weibo'
+          ,
+          
+        
+          'douban'
+          ,
+          
+        
+          'twitter'
+          
+        
+      ],
+      wechatQrcodeTitle: "分享到微信朋友圈",
+      wechatQrcodeHelper: '<p>扫码后点击右上角</p><p>将本文分享至朋友圈</p>'
+    });
+  </script>
+
+  
+
+  <script src="/assets/js/prism.js"></script>
+  <script src="/assets/js/index.min.js"></script>
+  <script>
+    var gitalk = new Gitalk({
+      clientID: 'f2f3b5bfef7d8b38ca20',
+      clientSecret: 'bb0e3ba63af05f2957b4f4984afcf5416ae9deea',
+      repo: 'mlegin-hll.github.io',
+      owner: 'mlegin-hll',
+      admin: 'mlegin-hll',
+      id: location.pathname,
+      distractionFreeMode: 'false'
+    })
+    gitalk.render('gitalk_container')
+  </script>
+
+</body>
+
+</html>

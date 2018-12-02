@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08a76343-8da5-4363-a256-6edb530d52d7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-11-06-jekyll博客搭建笔记.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-11-06-jekyll博客搭建笔记.markdown" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/jekyll/update/2018/11/06/jekyll博客搭建笔记.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/jekyll/update/2018/11/06/jekyll博客搭建笔记.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -97,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/_site/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="193">
-              <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="84" />
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="e#1213#1218#0" expanded="true" />
                 <element signature="e#3210#3215#0" expanded="true" />
@@ -107,11 +102,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_site/about/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="94" column="6" selection-end-line="101" />
+            <state relative-caret-position="722">
+              <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+              <folding>
+                <element signature="e#1211#1216#0" expanded="true" />
+                <element signature="e#3038#3043#0" expanded="true" />
+                <element signature="e#3206#3211#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,11 +139,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" selection-start-line="36" selection-end-line="39" selection-end-column="28" />
+            <state relative-caret-position="480">
+              <caret line="32" selection-start-line="32" selection-end-line="39" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -332,16 +332,15 @@
       <workItem from="1541468715759" duration="3244000" />
       <workItem from="1541646349629" duration="573000" />
       <workItem from="1541671802192" duration="1272000" />
-      <workItem from="1543782860358" duration="1515000" />
+      <workItem from="1543782860358" duration="2925000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6604000" />
+    <option name="totallyTimeSpent" value="8014000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -432,7 +431,7 @@
     <entry file="file://$PROJECT_DIR$/_site/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
-          <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="84" />
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#1213#1218#0" expanded="true" />
             <element signature="e#3210#3215#0" expanded="true" />
@@ -441,17 +440,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
+    <entry file="file://$PROJECT_DIR$/_site/about/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" selection-start-line="36" selection-end-line="39" selection-end-column="28" />
+        <state relative-caret-position="722">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+          <folding>
+            <element signature="e#1211#1216#0" expanded="true" />
+            <element signature="e#3038#3043#0" expanded="true" />
+            <element signature="e#3206#3211#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_site/about/index.html">
+    <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="94" column="6" selection-end-line="101" />
+        <state relative-caret-position="480">
+          <caret line="32" selection-start-line="32" selection-end-line="39" selection-end-column="28" />
         </state>
       </provider>
     </entry>

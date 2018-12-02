@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2018-10-23笔记! - mlegin</title>
+    <meta name="author"  content="mlegin">
+    <meta name="description" content="2018-10-23笔记!">
+    <meta name="keywords"  content="">
+    <!-- Open Graph -->
+    <meta property="og:title" content="2018-10-23笔记! - mlegin">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://localhost:4000/2018/10/23/%E7%AC%94%E8%AE%B0.html">
+    <meta property="og:description" content="昵称悟空，千禧一代，前端开发者/伪极客/灵魂摄影师，热爱技术&设计。很高兴能在这里与你分享我对技术和生活的思考。">
+    <meta property="og:site_name" content="mlegin">
+    <link rel="stylesheet" href="//cdn.staticfile.org/normalize/6.0.0/normalize.min.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_roc50gemkxpw4s4i.css">
+    <link rel="stylesheet" href="/assets/css/github-markdown.css">
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/share.min.css">
+    <link rel="stylesheet" href="/assets/css/app.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+	
+	<!--
+Author: Ray-Eldath
+refer to:
+ - http://docs.mathjax.org/en/latest/options/index.html
+-->
+
+	<script type="text/javascript" async src="https://cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+	
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+		jax: ["input/TeX", "output/HTML-CSS"],
+		tex2jax: {
+			inlineMath: [ ["$", "$"] ],
+			displayMath: [ ["$$", "$$"] ],
+			skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+		},
+		"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+      });
+    </script>
+
+	
+    <!--
+Author: Ray-Eldath
+-->
+<style>
+    .markdown-body .anchor{
+        float: left;
+        margin-top: -8px;
+        margin-left: -20px;
+        padding-right: 4px;
+        line-height: 1;
+        opacity: 0;
+    }
+    
+    .markdown-body .anchor .anchor-icon{
+        font-size: 15px
+    }
+</style>
+<script>
+    $(document).ready(function() {
+        let nodes = document.querySelector(".markdown-body").querySelectorAll("h1,h2,h3")
+        for(let node of nodes) {
+            var anchor = document.createElement("a")
+            var anchorIcon = document.createElement("i")
+            anchorIcon.setAttribute("class", "fa fa-anchor fa-lg anchor-icon")
+            anchorIcon.setAttribute("aria-hidden", true)
+            anchor.setAttribute("class", "anchor")
+            anchor.setAttribute("href", "#" + node.getAttribute("id"))
+            
+            anchor.onmouseover = function() {
+                this.style.opacity = "0.4"
+            }
+            
+            anchor.onmouseout = function() {
+                this.style.opacity = "0"
+            }
+            
+            anchor.appendChild(anchorIcon)
+            node.appendChild(anchor)
+        }
+    })
+</script>
+</head>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<body>
+  <!--[if lt IE 10]>
+<div class="alert-danger" role="alert">你的浏览器实在太太太旧了，放学别走，升级完浏览器再说！<a target="_blank" class="alert-link" href="http://browsehappy.com">立即升级</a></div>
+<![endif]-->
+  <input id="nm-switch" type="hidden" value="true"> <header class="g-header">
+    <div class="g-logo">
+      <a href="/"></a>
+    </div>
+    <i id="menu-toggle" class="iconfont icon-menu"></i>
+    <nav class="g-nav">
+        <ul>
+            
+            <li><a href="/">home</a></li>
+            
+            <li><a href="/tags.html">tags</a></li>
+            
+        </ul>
+    </nav>
+</header>
+
+
+  <header
+    class="g-banner post-header post-pattern-circuitBoard bgcolor-default post-no-cover"
+    data-theme="default"
+  >
+    <div class="post-wrapper">
+      <div class="post-tags">
+        
+      </div>
+      <h1>2018-10-23笔记!</h1>
+      <div class="post-meta">
+        <span class="post-meta-item"><i class="iconfont icon-author"></i>mlegin</span>
+        <time class="post-meta-item" datetime="18-10-23"><i class="iconfont icon-date"></i>23 Oct 2018</time>
+      </div>
+    </div>
+    
+  </header>
+
+  <div class="post-content visible">
+    
+
+    <article class="markdown-body">
+      <h2 id="app">app</h2>
+
+<h3 id="项目结构">项目结构</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>index.ios.js        //ios入口
+index.android.js    //android入口
+android             //android native
+ios                 //ios native
+res                 //全局资源
+doc                 //文档
+js                  
+    common          //可复用组件
+    expand          //扩展
+    page            //完整页面
+    config          //配置项
+    util            //工具类
+</code></pre></div></div>
+
+<h3 id="标签">标签</h3>
+
+<h4 id="navigation">navigation</h4>
+<p>页面跳转-传值</p>
+
+<h4 id="navigationbar">navigationBar</h4>
+<p>标题栏，状态栏</p>
+
+<h4 id="react-navigation">react-navigation</h4>
+<p>取代navigation
+StacNavigator 上
+TapNavigator 底
+DrawerNavigator 侧边划出</p>
+
+<h3 id="了解hll_sc_app">了解hll_sc_app</h3>
+
+<h4 id="npm-镜像">npm 镜像</h4>
+<p>在文件夹下默认是</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://sinopia.node.hualala.com/#/
+</code></pre></div></div>
+
+<h3 id="git">git</h3>
+
+<h4 id="拉取远端分支到本地">拉取远端分支到本地</h4>
+
+<p>git checkout -b 本地分支名 origin/远程分支名</p>
+
+<h3 id="报错">报错</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>error react-native@0.57.3: The engine "node" is incompatible with this module. Expected version "&gt;=8.3". Got "8.2.1"
+error Found incompatible module
+</code></pre></div></div>
+
+<p>node版本低了</p>
+
+<p>解决：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>### 第一步：使用npm安装n模块
+
+* * *
+
+n模块是专门用来管理nodejs版本的
+
+sudo npm install -g n
+
+&gt; **提示 :** 如果不使用sudo作为前缀，很可能出现权限访问异常导致安装失败
+
+### 第二步：升级nodejs
+
+* * *
+
+升级nodejs是有两种方法： 
+第一种是升级到最新版本
+
+sudo n latest
+
+第二种是升级到稳定版本
+
+sudo n stable
+
+&gt; **提示 :** 建议是稳定版本 
+&gt; 更多n模块管理请搜索【nodejs n模块使用说明】
+
+来源作者：Fan_Chason
+链接：https://www.jianshu.com/p/8ba8b795de10
+</code></pre></div></div>
+<p>引申
+电脑里有n管理node版本，node版本是10.12，但npm install的时候用的是8.21，所以报错，n回8.21就可以npm install了</p>
+
+<h3 id="问题">问题</h3>
+
+<h4 id="1cfbundleidentifier">1.CFBundleIdentifier</h4>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CFBundleIdentifier", Does Not Exist
+</code></pre></div></div>
+
+<p>原因：
+init命令默认会创建最新的版本，而目前最新的0.45版本需要下载boost库编译。此库体积庞大，在国内即便翻墙也很难下载成功，导致很多人无法正常运行iOS项目，推荐暂时使用0.44.3的版本。</p>
+
+<p>解决：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>react-native init MyApp –-version 0.44.3
+</code></pre></div></div>
+<p>延伸：跑公司项目报此错误
+以为是什么设置问题，结果将升级包文件复制到node_modules里面，解决。</p>
+
+<h3 id="2watchman">2.watchman</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>node[10060] (FSEvents.framework) FSEventStreamStart: register_with_server: ERROR: f2d_register_rpc() =&gt; (null) (-22) 2018-10-23 13:19 node[10060] (FSEvents.framework) FSEventStreamStart: register_with_server: ERROR: f2d_register_rpc() =&gt; (null) (-22)
+</code></pre></div></div>
+
+<p>原因：更新了macOS 但是没用最新watchman</p>
+
+<p>解决：</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew install watchman
+</code></pre></div></div>
+
+    </article>
+
+    
+    <div class="social-share-wrapper">
+      <div class="social-share"></div>
+    </div>
+    
+  </div>
+
+  <section class="author-detail">
+    <section class="post-footer-item author-card">
+      <div class="avatar">
+        <img src="http://localhost:4000/assets/img/profile.png" alt="">
+      </div>
+      <div class="author-name" rel="author">mlegin</div>
+      <div class="bio">
+        <p>前端开发者，热爱技术&设计，简单乐观爱创造</p>
+      </div>
+      
+      <ul class="sns-links">
+        
+        <li>
+          <a href="//weibo.com/lovecolcol" target="_blank">
+                    <i class="iconfont icon-weibo"></i>
+                </a>
+        </li>
+        
+        <li>
+          <a href="//juejin.im/user/57a6f434165abd006159b4cc" target="_blank">
+                    <i class="iconfont icon-juejin"></i>
+                </a>
+        </li>
+        
+        <li>
+          <a href="//www.instagram.com/steveliaocn" target="_blank">
+                    <i class="iconfont icon-instagram"></i>
+                </a>
+        </li>
+        
+        <li>
+          <a href="//github.com/kaeyleo" target="_blank">
+                    <i class="iconfont icon-github"></i>
+                </a>
+        </li>
+        
+      </ul>
+      
+    </section>
+    <section class="post-footer-item read-next">
+      
+      <div class="read-next-item">
+        <a href="/2018/11/05/welcome-to-jekyll.html" class="read-next-link"></a>
+        <section>
+          <span>Welcome to Jekyll!</span>
+          <p>You’ll find this post in your _posts directory. Go ahead ...</p>
+        </section>
+        
+     </div>
+      
+
+      
+      <div class="read-next-item">
+        <a href="/2018/10/23/%E7%AC%94%E8%AE%B0.html" class="read-next-link"></a>
+          <section>
+            <span>2018-10-23笔记!</span>
+            <p>app</p>
+          </section>
+          
+      </div>
+      
+    </section>
+    
+    <div id="gitalk_container"></div>
+  </section>
+
+  <footer class="g-footer">
+  <section>mlegin ©
+  
+  
+    2017
+    -
+  
+  2018
+  </section>
+  <section>Powered by <a href="//jekyllrb.com">Jekyll</a> | <a href="https://github.com/kaeyleo/jekyll-theme-H2O">Theme H2O</a></section>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <script src="/assets/js/social-share.min.js"></script>
+  <script>
+    socialShare('.social-share', {
+      sites: [
+        
+          'wechat'
+          ,
+          
+        
+          'weibo'
+          ,
+          
+        
+          'douban'
+          ,
+          
+        
+          'twitter'
+          
+        
+      ],
+      wechatQrcodeTitle: "分享到微信朋友圈",
+      wechatQrcodeHelper: '<p>扫码后点击右上角</p><p>将本文分享至朋友圈</p>'
+    });
+  </script>
+
+  
+
+  <script src="/assets/js/prism.js"></script>
+  <script src="/assets/js/index.min.js"></script>
+  <script>
+    var gitalk = new Gitalk({
+      clientID: 'f2f3b5bfef7d8b38ca20',
+      clientSecret: 'bb0e3ba63af05f2957b4f4984afcf5416ae9deea',
+      repo: 'mlegin-hll.github.io',
+      owner: 'mlegin-hll',
+      admin: 'mlegin-hll',
+      id: location.pathname,
+      distractionFreeMode: 'false'
+    })
+    gitalk.render('gitalk_container')
+  </script>
+
+</body>
+
+</html>

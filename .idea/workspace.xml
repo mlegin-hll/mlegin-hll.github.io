@@ -3,14 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="08a76343-8da5-4363-a256-6edb530d52d7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/post.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/2017/04/18/new-theme-h2o.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2017/04/18/new-theme-h2o.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/2017/07/30/mathjax-test.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2017/07/30/mathjax-test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/2018/10/23/笔记.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2018/10/23/笔记.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/2018/11/05/welcome-to-jekyll.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2018/11/05/welcome-to-jekyll.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/2018/11/06/jekyll博客搭建笔记.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2018/11/06/jekyll博客搭建笔记.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/2018/11/06/搭建笔记.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2018/11/06/搭建笔记.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/page2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/page2/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/rss.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/rss.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -26,10 +26,10 @@
     <session id="-914743691">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="3" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -37,6 +37,7 @@
           <entry key="CNAME" value="3" />
           <entry key="Gemfile" value="1" />
           <entry key="html" value="7" />
+          <entry key="json" value="1" />
           <entry key="lock" value="1" />
           <entry key="markdown" value="5" />
           <entry key="md" value="5" />
@@ -47,6 +48,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="7" />
+          <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="15" />
           <entry key="XML" value="1" />
           <entry key="YAML" value="2" />
@@ -72,15 +74,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2018-10-23-笔记.markdown">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="5" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2018-11-06-搭建笔记.markdown">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
@@ -92,20 +85,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_site/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1525">
+            <state relative-caret-position="225">
               <caret line="15" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#7013#7020#1" expanded="true" />
-              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" selection-start-line="30" selection-end-line="33" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_config.yml">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="33" column="50" lean-forward="true" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+            <state relative-caret-position="285">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -119,7 +118,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_layouts/post.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="439">
@@ -131,7 +130,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2017-04-18-new-theme-h2o.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-159">
+            <state relative-caret-position="15">
               <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="20" />
             </state>
           </provider>
@@ -149,9 +148,7 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/old/_config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-117" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -191,8 +188,8 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="438" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="103" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="822" />
@@ -202,6 +199,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="mlegin-hll.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mlegin-hll.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -219,16 +227,10 @@
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="_posts" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
             <path>
-              <item name="mlegin-hll.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mlegin-hll.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="mlegin-hll.github.io" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="old" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -277,19 +279,20 @@
       <workItem from="1541468715759" duration="3244000" />
       <workItem from="1541646349629" duration="573000" />
       <workItem from="1541671802192" duration="1272000" />
-      <workItem from="1543782860358" duration="8423000" />
+      <workItem from="1543782860358" duration="8505000" />
+      <workItem from="1543824448889" duration="1241000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13512000" />
+    <option name="totallyTimeSpent" value="14835000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="10" y="23" width="1440" height="822" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49863014" visible="true" weight="0.24947146" />
+      <window_info id="Structure" order="1" sideWeight="0.50136983" side_tool="true" weight="0.24947146" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -326,60 +329,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/about.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_site/jekyll/update/2018/11/06/jekyll博客搭建笔记.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1838" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_site/feed.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#1064#1068#0" expanded="true" />
-            <element signature="e#1074#1080#0" expanded="true" />
-            <element signature="e#1089#1095#0" expanded="true" />
-            <element signature="e#1095#1099#0" expanded="true" />
-            <element signature="e#1109#1113#0" expanded="true" />
-            <element signature="e#1116#1120#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/index.md" />
+    <entry file="file://$PROJECT_DIR$/about.md" />
+    <entry file="file://$PROJECT_DIR$/Gemfile" />
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock" />
+    <entry file="file://$PROJECT_DIR$/_site/jekyll/update/2018/11/06/jekyll博客搭建笔记.html" />
+    <entry file="file://$PROJECT_DIR$/_site/feed.xml" />
     <entry file="file://$PROJECT_DIR$/old/md">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/old/CNAME">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CNAME">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/old/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-117" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_site/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1525">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#7013#7020#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2018-10-23-笔记.markdown">
       <provider selected="true" editor-type-id="text-editor">
@@ -395,10 +352,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2017-04-18-new-theme-h2o.md">
+    <entry file="file://$PROJECT_DIR$/_site/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-159">
-          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="20" />
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -409,17 +366,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="33" column="50" lean-forward="true" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/old/CNAME">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CNAME">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/old/_config.yml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/post.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
           <caret line="141" column="26" selection-start-line="141" selection-start-column="26" selection-end-line="141" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-04-18-new-theme-h2o.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" selection-start-line="30" selection-end-line="33" selection-end-column="50" />
         </state>
       </provider>
     </entry>

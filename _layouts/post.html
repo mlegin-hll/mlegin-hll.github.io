@@ -98,13 +98,14 @@
       </div>
       {% endif %}
     </section>
-    {% if site.comments.disqus %}
+    {% if site.comments.gitalk %}
     <section class="post-footer-item comment">
         <div id="disqus_thread"></div>
+        <div id="gitalk_container"></div>
       <!--<div id="gitalk_container"></div>-->
     </section>
     {% endif %}
-    <div id="gitalk_container"></div>
+
   </section>
 
   {% include footer.html %}

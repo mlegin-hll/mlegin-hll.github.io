@@ -1,6 +1,6 @@
 # Site settings 配置站点
 title: 'mlegin'
-description: '昵称悟空，千禧一代，前端开发者/伪极客/灵魂摄影师，热爱技术&设计。很高兴能在这里与你分享我对技术和生活的思考。'
+description: '兴趣使然'
 keyword: 'mlegin'
 url: '' # your host
 
@@ -19,7 +19,7 @@ footer:
 # Author 配置博主信息
 author: 'mlegin'
 nickname: '悟空'
-bio: '前端开发者，热爱技术&设计，简单乐观爱创造'
+bio: '兴趣使然'
 avatar: '/assets/img/profile.png'
 
 # Search
@@ -30,18 +30,18 @@ nightMode: true
 
 # Comments 评论功能
 comments:
-  disqus: true
-  disqus_url: 'https://leginm.disqus.com/embed.js'
+#  disqus: true
+#  disqus_url: 'https://leginm.disqus.com/embed.js'
 
-#comments:
-#  gitalk: true
-#  gitalk_clientID: 'f2f3b5bfef7d8b38ca20'
-#  gitalk_Secret: 'bb0e3ba63af05f2957b4f4984afcf5416ae9deea'
-#  gitalk_repo: 'mlegin-hll.github.io'
-#  gitalk_owner: 'mlegin-hll'
-#  gitalk_admin: ['mlegin-hll']
-#  distractionFreeMode: false
-#  createIssueManually: true
+comments:
+  gitalk: true
+  gitalk_clientID: 'f2f3b5bfef7d8b38ca20'
+  gitalk_Secret: 'bb0e3ba63af05f2957b4f4984afcf5416ae9deea'
+  gitalk_repo: 'mlegin-hll.github.io'
+  gitalk_owner: 'mlegin-hll'
+  gitalk_admin: ['mlegin-hll']
+  distractionFreeMode: false
+  createIssueManually: true
 
 # MathJax 公式支持 by Ray-Eldath
 mathjax: true

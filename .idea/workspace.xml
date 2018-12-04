@@ -2,30 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08a76343-8da5-4363-a256-6edb530d52d7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/CNAME" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/Gemfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/Gemfile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/_config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/_posts/2018-10-23-笔记.markdown" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/_posts/2018-11-05-welcome-to-jekyll.markdown" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/_posts/2018-11-06-jekyll博客搭建笔记.markdown" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/_site/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/_site/CNAME" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/_site/about/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/_site/assets/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/_site/assets/minima-social-icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/_site/feed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/_site/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/_site/jekyll/update/2018/10/23/笔记.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/_site/jekyll/update/2018/11/05/welcome-to-jekyll.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/_site/jekyll/update/2018/11/06/jekyll博客搭建笔记.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/_site/md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/about.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/rss.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/rss.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -74,7 +52,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="123" />
+          <entry key="html" value="124" />
           <entry key="markdown" value="165" />
           <entry key="md" value="16" />
           <entry key="yml" value="149" />
@@ -82,7 +60,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="123" />
+          <entry key="HTML" value="124" />
           <entry key="PLAIN_TEXT" value="181" />
           <entry key="YAML" value="149" />
         </counts>
@@ -91,11 +69,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2018-11-05-welcome-to-jekyll.markdown">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1489">
-              <caret line="150" column="3" selection-start-line="150" selection-start-column="3" selection-end-line="150" selection-end-column="3" />
+            <state relative-caret-position="330">
+              <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -137,11 +115,11 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_layouts/post.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-370">
-              <caret line="100" column="30" selection-start-line="100" selection-start-column="30" selection-end-line="100" selection-end-column="30" />
+            <state relative-caret-position="1695">
+              <caret line="113" column="56" lean-forward="true" selection-start-line="113" selection-start-column="56" selection-end-line="113" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -298,12 +276,12 @@
       <workItem from="1541671802192" duration="1272000" />
       <workItem from="1543782860358" duration="8505000" />
       <workItem from="1543824448889" duration="1525000" />
-      <workItem from="1543905893771" duration="1411000" />
+      <workItem from="1543905893771" duration="1968000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16530000" />
+    <option name="totallyTimeSpent" value="17087000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -406,13 +384,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-11-05-welcome-to-jekyll.markdown">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1489">
-          <caret line="150" column="3" selection-start-line="150" selection-start-column="3" selection-end-line="150" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/old/_config.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -428,8 +399,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-370">
-          <caret line="100" column="30" selection-start-line="100" selection-start-column="30" selection-end-line="100" selection-end-column="30" />
+        <state relative-caret-position="1695">
+          <caret line="113" column="56" lean-forward="true" selection-start-line="113" selection-start-column="56" selection-end-line="113" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2018-11-05-welcome-to-jekyll.markdown">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
         </state>
       </provider>
     </entry>

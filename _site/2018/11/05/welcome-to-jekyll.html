@@ -189,8 +189,8 @@ Author: Ray-Eldath
     </section>
     
     <section class="post-footer-item comment">
-        <div id="disqus_thread"></div>
-        <!--<div id="gitalk_container"></div>-->
+        <!--<div id="disqus_thread"></div>-->
+        <div id="gitalk_container"></div>
       <!--<div id="gitalk_container"></div>-->
     </section>
     
@@ -210,7 +210,7 @@ Author: Ray-Eldath
 </footer>
 
 
-  <!--<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>-->
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
   <script src="/assets/js/social-share.min.js"></script>
   <script>
     socialShare('.social-share', {
@@ -238,41 +238,23 @@ Author: Ray-Eldath
   </script>
 
   
-  <script>
-    /**
-     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-      var d = document, s = d.createElement('script');
-      s.src = 'https://jekll-mlegin-top.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-  </script>
-  
 
   <script src="/assets/js/prism.js"></script>
   <script src="/assets/js/index.min.js"></script>
 
   <!--gitalk-->
-  <!--<script>-->
-    <!--var gitalk = new Gitalk({-->
-      <!--clientID: 'f2f3b5bfef7d8b38ca20',-->
-      <!--clientSecret: 'bb0e3ba63af05f2957b4f4984afcf5416ae9deea',-->
-      <!--repo: 'mlegin-hll.github.io',-->
-      <!--owner: 'mlegin-hll',-->
-      <!--admin: ['mlegin-hll'],-->
-      <!--id: location.pathname,-->
-      <!--distractionFreeMode: false-->
-    <!--})-->
-    <!--gitalk.render('gitalk_container')-->
-  <!--</script>-->
+  <script>
+    var gitalk = new Gitalk({
+      clientID: 'f2f3b5bfef7d8b38ca20',
+      clientSecret: 'bb0e3ba63af05f2957b4f4984afcf5416ae9deea',
+      repo: 'mlegin-hll.github.io',
+      owner: 'mlegin-hll',
+      admin: ['mlegin-hll'],
+      id: location.pathname,
+      distractionFreeMode: false
+    })
+    gitalk.render('gitalk_container')
+  </script>
 
 </body>
 

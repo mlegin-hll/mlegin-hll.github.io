@@ -94,7 +94,7 @@ Please report a bug if this causes problems.
 
 # 三、使用
 
-1. 添加文章
+- 添加文章
 
 文章都放在_posts目录下，格式需要严格按照年-月-日-文章名.markdown/md
 
@@ -110,21 +110,26 @@ tags: markdown
 ---
 ```
 
-2. 文章提交：
+- 文章提交：
+
 ```
 git commit -am 'you new blog title'
 git push
 ```
 
-3. jekyll 使用图片
+- jekyll 使用图片
 
 ```
 [图片pic1]({{ "/assets/images4post/pic1.jpg" | absolute_url }})
 jekyll框架下post中引用asset资源目录的图片语法(绝对路径)如下:
 ![图片pic1]({{ "/assets/images4post/pic1.jpg" | absolute_url }})
 ```
+[图片pic1]({{ "/assets/img/hero.jpg"}})
+样例
+![](/assets/img/hero.jpg)
 
-4.使用tag（修改于12-3切换h2o主题）
+- 使用tag（修改于12-3切换h2o主题）
+
 ```
 ---
 layout: post
@@ -150,12 +155,14 @@ disqus是国外编写的第三方插件，包含评论功能，但使用时需�
 2. 在jekyll的h2o主题中集成
 
 - _config.yml中
+
 ```
 # Comments 评论功能
 comments:
   disqus: true
   disqus_url: 'https://leginm.disqus.com/embed.js'
 ```
+
 - _layouts/_post中
 
 ```

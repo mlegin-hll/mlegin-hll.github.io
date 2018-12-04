@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2018-11-06jeklly博客搭建笔记 - mlegin</title>
+    <title>安装 Jekyll! - mlegin</title>
     <meta name="author"  content="mlegin">
-    <meta name="description" content="2018-11-06jeklly博客搭建笔记">
-    <meta name="keywords"  content="">
+    <meta name="description" content="安装 Jekyll!">
+    <meta name="keywords"  content="jekyll, markdown">
     <!-- Open Graph -->
-    <meta property="og:title" content="2018-11-06jeklly博客搭建笔记 - mlegin">
+    <meta property="og:title" content="安装 Jekyll! - mlegin">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://localhost:4000/2018/11/06/jekyll%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0.html">
+    <meta property="og:url" content="http://localhost:4000/2018/11/08/welcome-to-jekyll.html">
     <meta property="og:description" content="昵称悟空，千禧一代，前端开发者/伪极客/灵魂摄影师，热爱技术&设计。很高兴能在这里与你分享我对技术和生活的思考。">
     <meta property="og:site_name" content="mlegin">
     <link rel="stylesheet" href="//cdn.staticfile.org/normalize/6.0.0/normalize.min.css">
@@ -115,11 +115,17 @@ Author: Ray-Eldath
     <div class="post-wrapper">
       <div class="post-tags">
         
+          
+            <a href="http://localhost:4000/tags#jekyll" class="post-tag">jekyll</a>
+          
+            <a href="http://localhost:4000/tags#markdown" class="post-tag">markdown</a>
+          
+        
       </div>
-      <h1>2018-11-06jeklly博客搭建笔记</h1>
+      <h1>安装 Jekyll!</h1>
       <div class="post-meta">
-        <span class="post-meta-item"><i class="iconfont icon-author"></i>mlegin</span>
-        <time class="post-meta-item" datetime="18-11-06"><i class="iconfont icon-date"></i>06 Nov 2018</time>
+        <span class="post-meta-item"><i class="iconfont icon-author"></i>wangxiaofeng@hualala.com</span>
+        <time class="post-meta-item" datetime="18-11-08"><i class="iconfont icon-date"></i>08 Nov 2018</time>
       </div>
     </div>
     
@@ -133,19 +139,12 @@ Author: Ray-Eldath
 
 <p>jekyll是一个简单的免费的Blog生成工具，可以看做一个将markdown文件生成静态网站的工具，并且他可以免费部署在github上，结合github Pages，我们可以在自己的github.io上看我们的markdown“静态网站”</p>
 
-<p><a href="http://mlegin-hll.github.io">效果</a></p>
-
 <h1 id="二安装">二、安装</h1>
 
-<p>1.首先在github账户上以<strong>自己的username</strong>新建一个仓库</p>
-
-<p>然后clone到本地</p>
-
-<p>文件名：【username.github.io】</p>
-
-<p><a href="https://pages.github.com/">参照链接</a></p>
-
-<p>2.安装启动jekyll</p>
+<p>clone 项目到本地</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone http://git.hualala.com/hualala_mall/jekyllBlog
+</code></pre></div></div>
+<p>安装启动jekyll</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install jekyll      //没有gem请自行google配置ruby环境
 
 gem install bundler     //Bundler 是管理Gem相依性的工具
@@ -154,14 +153,14 @@ gem install minima      //主题
 
 jekyll -v               //查看版本
 
-jekyll new firstBlog    //新建blog
+bundle                  //安装依赖的Gem文件
 
-cd firstBlog
-
-jekyll server           //启动本地服务，在127.0.0.1:4000中可以查看
+bundle exec jekyll server           //进入项目目录,启动本地服务
 </code></pre></div></div>
 
-<h3 id="相关报错记录">相关报错记录</h3>
+<p>启动浏览器，输入 <code class="highlighter-rouge">127.0.0.1：4000</code> 查看结果</p>
+
+<h3 id="安装执行错误排查">安装执行错误排查</h3>
 
 <p>运行jekyll 命令报错</p>
 
@@ -185,57 +184,142 @@ jekyll server           //启动本地服务，在127.0.0.1:4000中可以查看
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install minima
 </code></pre></div></div>
 
-<h1 id="三部署文件到github">三、部署文件到github</h1>
-
-<p>1.拷贝文件</p>
-
-<p>将firstBlog内所有文件拷贝到username.github.io文件夹下</p>
-
-<p>2.提交到远端仓库</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add .
-git commit -m "init jekyll"
-git push -u origin master
+<p>运行jekyll serve报错</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>WARN: Unresolved specs during Gem::Specification.reset:
+      rouge (&lt; 4, &gt;= 1.7)
+WARN: Clearing out unresolved specs.
+Please report a bug if this causes problems.
+/usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.17.1/lib/bundler/spec_set.rb:91:in `block in materialize': Could not find concurrent-ruby-1.1.3 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.17.1/lib/bundler/spec_set.rb:85:in `map!'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.17.1/lib/bundler/spec_set.rb:85:in `materialize'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.17.1/lib/bundler/definition.rb:170:in `specs'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.17.1/lib/bundler/definition.rb:237:in `specs_for'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.17.1/lib/bundler/definition.rb:226:in `requested_specs'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.17.1/lib/bundler/runtime.rb:108:in `block in definition_method'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.17.1/lib/bundler/runtime.rb:20:in `setup'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.17.1/lib/bundler.rb:107:in `setup'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/jekyll-3.8.5/lib/jekyll/plugin_manager.rb:50:in `require_from_bundler'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/jekyll-3.8.5/exe/jekyll:11:in `&lt;top (required)&gt;'
+	from /usr/local/bin/jekyll:22:in `load'
+	from /usr/local/bin/jekyll:22:in `&lt;main&gt;'
 </code></pre></div></div>
 
-<p>过一分钟访问http://{username}.github.io试试</p>
+<p>解决方法：
+  删除 Gemfile.lock</p>
 
-<h1 id="四使用">四、使用</h1>
+<h1 id="三使用">三、使用</h1>
 
-<p>1.添加文章</p>
+<ul>
+  <li>添加文章</li>
+</ul>
 
-<p>文章都放在_posts目录下，格式需要严格按照年-月-日-文章名.markdown</p>
+<p>文章都放在_posts目录下，格式需要严格按照年-月-日-文章名.markdown/md</p>
 
 <p>文件开头参照默认格式</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2017-02-22 09:56:49 +0800
-categories: jekyll update
+title:  "post title"                          // 文章标题
+date:   2018-11-29 09:56:49 +0800
+categories: js react react-native             //文章分类信息
+tags: markdown
 ---
 </code></pre></div></div>
 
-<p>2.配置文件 _config.yml</p>
+<ul>
+  <li>文章提交：</li>
+</ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>title: 我的标题
-email: shiyue@hualala.com
-description: &gt;- # this means to ignore newlines until "baseurl:"
-  个人简介：兴趣使然
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname &amp; protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  mlegin-hll
-
-# Build settings
-markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit -am 'you new blog title'
+git push
 </code></pre></div></div>
-<h1 id="五绑定域名">五、绑定域名</h1>
 
-<p><a href="https://blog.csdn.net/u013282507/article/details/54944395">参照</a></p>
+<ul>
+  <li>jekyll 使用图片</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[图片pic1](http://localhost:4000/assets/images4post/pic1.jpg)
+jekyll框架下post中引用asset资源目录的图片语法(绝对路径)如下:
+![图片pic1](http://localhost:4000/assets/images4post/pic1.jpg)
+</code></pre></div></div>
+<p><a href="/assets/img/hero.jpg">图片pic1</a>
+样例
+<img src="/assets/img/hero.jpg" alt="" /></p>
+
+<ul>
+  <li>使用tag（修改于12-3切换h2o主题）</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: post
+title:  "post title"                          // 文章标题
+date:   2018-11-29 09:56:49 +0800
+categories: js react react-native             //文章分类信息
+tags: markdown
+---
+</code></pre></div></div>
+<p>h2o主题可以自动识别并提取tag分类，照上文添加tag即可</p>
+
+<h1 id="四整合disqus评论12-3">四、整合disqus评论（12-3）</h1>
+<p>现在主流第三方评论系统有gitalk，disqus等</p>
+
+<p>gitalk是国人编写，使用github oauth app获取github中repo的读写权限，使得该repo的issue可以在博客中使用，我们的系统没有放在公有github上，故此插件难以使用。</p>
+
+<p>disqus是国外编写的第三方插件，包含评论功能，但使用时需要翻墙，否则看不见，集成步骤如下：</p>
+
+<ol>
+  <li>
+    <p>注册Disqus并拿到你的shortname</p>
+
+    <p><a href="https://damoqiongqiu.github.io/jekyll/2017/07/07/%E5%88%A9%E7%94%A8github%E5%92%8Cjekyll%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BABlog-12.html">参照链接</a> 需要翻墙</p>
+  </li>
+  <li>
+    <p>在jekyll的h2o主题中集成</p>
+  </li>
+</ol>
+
+<ul>
+  <li>_config.yml中</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Comments 评论功能
+comments:
+  disqus: true
+  disqus_url: 'https://leginm.disqus.com/embed.js'
+</code></pre></div></div>
+
+<ul>
+  <li>_layouts/_post中</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&lt;section class="post-footer-item comment"&gt;
+    &lt;div id="disqus_thread"&gt;&lt;/div&gt;
+&lt;/section&gt;
+
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&lt;script&gt;
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://md-22city-cn.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+})();
+&lt;/script&gt;
+
+</code></pre></div></div>
+<p>文件结构已经写好，只要改相应参数就可</p>
+
+<p>done~</p>
+
+<p><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet</a></p>
 
 
     </article>
@@ -260,19 +344,10 @@ plugins:
     </section>
     <section class="post-footer-item read-next">
       
-      <div class="read-next-item">
-        <a href="/2018/11/08/welcome-to-jekyll.html" class="read-next-link"></a>
-        <section>
-          <span>安装 Jekyll!</span>
-          <p>一、jekyll简介</p>
-        </section>
-        
-     </div>
-      
 
       
       <div class="read-next-item">
-        <a href="/2018/11/06/%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0.html" class="read-next-link"></a>
+        <a href="/2018/11/06/jekyll%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0.html" class="read-next-link"></a>
           <section>
             <span>2018-11-06jeklly博客搭建笔记</span>
             <p>一、jekyll简介</p>
